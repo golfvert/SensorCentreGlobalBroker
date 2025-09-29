@@ -29,11 +29,10 @@
         }
     ],
     "dependencies": {
-        "node-red": "4.0.8",
+        "node-red": "4.1.0",
         "node-red-contrib-cron-plus": "~2.1.0",
         "node-red-contrib-prometheus-exporter": "~1.0.5",
         "node-red-contrib-queue-gate": "~1.5.5"
-    },
     },
     "engines": {
         "node": ">=18"
