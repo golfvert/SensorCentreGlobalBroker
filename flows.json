@@ -684,7 +684,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
+        "x": 230,
         "y": 520,
         "wires": [
             [
@@ -3556,7 +3556,7 @@
             "e7362bcc4039080f",
             "87eb1124d4f190ee"
         ],
-        "x": 210,
+        "x": 230,
         "y": 1960,
         "wires": [
             [
@@ -3636,22 +3636,6 @@
                 "72d0fec8655e3fa4"
             ]
         ]
-    },
-    {
-        "id": "e52e1140b20eed98",
-        "type": "debug",
-        "z": "9fcb3dc635318115",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 2540,
-        "wires": []
     },
     {
         "id": "a995e154aed47902",
