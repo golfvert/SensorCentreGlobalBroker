@@ -492,7 +492,7 @@
         "id": "e2f4578cdfd31176",
         "type": "prometheus-metric-config",
         "name": "wmo_wis2_scgb_connected_flag",
-        "help": "Connection status from Sencor Centre to broker",
+        "help": "Connection status from Sensor Centre to broker",
         "labels": "centre_id,report_by",
         "mtype": "gauge"
     },
