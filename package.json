@@ -30,6 +30,7 @@
     ],
     "dependencies": {
         "node-red": "4.1.0",
+        "@golfvert/node-red-redis": "~1.1.0",
         "node-red-contrib-cron-plus": "~2.1.0",
         "node-red-contrib-prometheus-exporter": "~1.0.5",
         "node-red-contrib-queue-gate": "~1.5.5"
