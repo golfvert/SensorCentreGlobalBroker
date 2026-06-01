@@ -2998,6 +2998,13 @@
                 "pt": "msg",
                 "to": "gb[4]",
                 "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "timeout",
+                "pt": "msg",
+                "to": "timeout",
+                "tot": "flow"
             }
         ],
         "action": "",
@@ -3024,6 +3031,13 @@
                 "p": "broker",
                 "pt": "msg",
                 "to": "gb[5]",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "timeout",
+                "pt": "msg",
+                "to": "timeout",
                 "tot": "flow"
             }
         ],
@@ -3052,6 +3066,13 @@
                 "pt": "msg",
                 "to": "gb[6]",
                 "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "timeout",
+                "pt": "msg",
+                "to": "timeout",
+                "tot": "flow"
             }
         ],
         "action": "",
@@ -3075,9 +3096,9 @@
         "rules": [
             {
                 "t": "set",
-                "p": "broker",
+                "p": "timeout",
                 "pt": "msg",
-                "to": "gb[7]",
+                "to": "timeout",
                 "tot": "flow"
             }
         ],
@@ -3102,9 +3123,9 @@
         "rules": [
             {
                 "t": "set",
-                "p": "broker",
+                "p": "timeout",
                 "pt": "msg",
-                "to": "gb[8]",
+                "to": "timeout",
                 "tot": "flow"
             }
         ],
@@ -3129,9 +3150,9 @@
         "rules": [
             {
                 "t": "set",
-                "p": "broker",
+                "p": "timeout",
                 "pt": "msg",
-                "to": "gb[9]",
+                "to": "timeout",
                 "tot": "flow"
             }
         ],
@@ -4837,8 +4858,7 @@
         "y": 2220,
         "wires": [
             [
-                "cf08d0dca6acb3e0",
-                "7d0d8b924a876e6b"
+                "cf08d0dca6acb3e0"
             ]
         ]
     },
@@ -4977,9 +4997,7 @@
         "x": 900,
         "y": 2220,
         "wires": [
-            [
-                "864f0a8a542bce42"
-            ]
+            []
         ]
     },
     {
@@ -5009,65 +5027,6 @@
         "wires": [
             [
                 "3723b3891bf71094"
-            ]
-        ]
-    },
-    {
-        "id": "7d0d8b924a876e6b",
-        "type": "debug",
-        "z": "9fcb3dc635318115",
-        "name": "debug 1",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1050,
-        "y": 2300,
-        "wires": []
-    },
-    {
-        "id": "1dc2bfa8cfbcfad4",
-        "type": "debug",
-        "z": "9fcb3dc635318115",
-        "name": "debug 2",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1220,
-        "y": 2060,
-        "wires": []
-    },
-    {
-        "id": "864f0a8a542bce42",
-        "type": "switch",
-        "z": "9fcb3dc635318115",
-        "name": "",
-        "property": "payload.fr-meteofrance-global-broker",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "999999999",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1050,
-        "y": 2160,
-        "wires": [
-            [
-                "1dc2bfa8cfbcfad4"
             ]
         ]
     },
